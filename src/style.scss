@@ -13,7 +13,7 @@ $menuHover: cyan;
     font-family: 'Ubuntu', sans-serif;
 }
 .section-name {
-    height: calc(100vh - $nav-height);
+    height: calc(100vh - #{$nav-height});
     font-weight: 900;
     position: absolute;
     transform: rotate(-90deg);
@@ -30,7 +30,7 @@ $menuHover: cyan;
 //             z-index: 2;
     }
     div.stripe {
-        width: calc(100vh - $nav-height);
+        width: calc(100vh - #{$nav-height});
         height: 1px;
         position: absolute;
         z-index: -1;

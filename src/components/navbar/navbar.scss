@@ -81,8 +81,8 @@ nav {
                 background-size: contain;
             }
             > * {
-                height: calc($nav-height * 0.9);
-                width: calc($nav-height * 0.9);
+                height: calc(#{$nav-height} * 0.9);
+                width: calc(#{$nav-height} * 0.9);
             }
         }
     }
@@ -99,8 +99,8 @@ nav {
         flex-direction: column;
         justify-content: space-around;
         cursor: pointer;
-        height: calc($nav-height - 5px);
-        width: calc($nav-height - 5px);
+        height: calc(#{$nav-height} - 5px);
+        width: calc(#{$nav-height} - 5px);
         align-items: center;
     }
     #ham:hover {
@@ -120,8 +120,8 @@ nav {
         #ham {
             border: 1px solid transparent;
             align-items:center;
-            height: calc($nav-height - 0px);
-            width: calc($nav-height - 0px);
+            height: calc(#{$nav-height} - 0px);
+            width: calc(#{$nav-height} - 0px);
             &:hover {
                 background-color: transparent;
             }

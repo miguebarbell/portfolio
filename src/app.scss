@@ -16,7 +16,7 @@ $nav-height: 3rem;
 .App {
     overflow-x: hidden;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+    //scrollbar-width: none; /* for Firefox */
     overflow-y: scroll;
     height: 100vh;
     scroll-snap-type: y mandatory;
@@ -27,7 +27,7 @@ $nav-height: 3rem;
         scroll-behavior: smooth;
         scroll-snap-align: end;
         width: 100vw;
-        height: calc(100vh - $nav-height);
+        height: calc(100vh - #{$nav-height});
         top: $nav-height;
         position: relative;
     }

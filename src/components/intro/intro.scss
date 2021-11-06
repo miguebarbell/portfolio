@@ -20,9 +20,9 @@ $descFontSize: 3rem;
         flex: 0.5;
         right: 0;
         h1 {
-            font-size: calc($descFontSize);
+            font-size: calc(#{$descFontSize});
             @media (min-width: 1000px) {
-                font-size: calc(1.5*$descFontSize);
+                font-size: calc(1.5 * #{$descFontSize});
             }
         }
         div {
@@ -30,14 +30,14 @@ $descFontSize: 3rem;
             display:flex;
             flex-direction: row;
             flex-wrap: wrap;
-            min-margin-left: 10vw;
+            margin-left: 10vw;
             h3,
             ul li {
 
-                font-size: calc(0.5*$descFontSize - 0.5rem);
+                font-size: calc(0.5 * #{$descFontSize} - 0.5rem);
                 font-weight: 400;
                 @media (min-width: 1000px) {
-                    font-size: calc($descFontSize - 0.5rem);
+                    font-size: calc(#{$descFontSize} - 0.5rem);
                     font-weight: 400;
                 }
 
@@ -46,7 +46,7 @@ $descFontSize: 3rem;
                 margin-right: 1rem;
             }
             ul {
-                height: calc(0.5*$descFontSize);
+                height: calc(0.5 * #{$descFontSize});
                 @media (min-width: 1000px) {
                     font-size: $descFontSize;
                     height: $descFontSize;
@@ -55,8 +55,8 @@ $descFontSize: 3rem;
                 li {
                     text-transform: uppercase;
                     list-style: none;
-                    height: calc(0.5*$descFontSize);
-                    font-size: calc(0.5*$descFontSize);
+                    height: calc(0.5 * #{$descFontSize});
+                    font-size: calc(0.5 * #{$descFontSize});
                     @media (min-width: 1000px) {
                         font-size: $descFontSize;
                         height: $descFontSize;
@@ -83,16 +83,16 @@ $descFontSize: 3rem;
         transform: translateY(-0.5*$descFontSize);
     }
     40% {
-        transform: translateY(calc(-1*$descFontSize));
+        transform: translateY(calc(-1 * #{$descFontSize}));
     }
     60% {
-        transform: translateY(calc(-1.5*$descFontSize));
+        transform: translateY(calc(-1.5 * #{$descFontSize}));
     }
     80% {
-        transform: translateY(calc(-2*$descFontSize));
+        transform: translateY(calc(-2 * #{$descFontSize}));
     }
     100% {
-        transform: translateY(calc(-2.5*$descFontSize));
+        transform: translateY(calc(-2.5 * #{$descFontSize}));
     }
 }
 @media (min-width: 1000px) {
@@ -101,16 +101,16 @@ $descFontSize: 3rem;
             transform: translateY(-$descFontSize);
         }
         40% {
-            transform: translateY(calc(-2*$descFontSize));
+            transform: translateY(calc(-2 * #{$descFontSize}));
         }
         60% {
-            transform: translateY(calc(-3*$descFontSize));
+            transform: translateY(calc(-3 * #{$descFontSize}));
         }
         80% {
-            transform: translateY(calc(-4*$descFontSize));
+            transform: translateY(calc(-4 * #{$descFontSize}));
         }
         100% {
-            transform: translateY(calc(-5*$descFontSize));
+            transform: translateY(calc(-5 * #{$descFontSize}));
         }
     }
 }
