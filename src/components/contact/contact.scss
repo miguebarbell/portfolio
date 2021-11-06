@@ -1,0 +1,193 @@
+@import "../../style.scss";
+
+#Contact {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: "title title" "form external";
+    background: url("https://4d0q7u11k31p1qnkosal8q2e-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/military-planning-720x460.jpg");
+    background-size: cover;
+    > div.title {
+        padding-left: 10%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1rem;
+        grid-area: title;
+        color: white;
+        background-color: rgba(0,0,0, 0.5);
+    }
+    > form.form {
+        background-color: rgba(0,0,0, 0.5);
+        grid-area: form;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button {
+            padding: 0.25rem 0.75rem;
+        }
+        input,
+        textarea {
+            margin-left: 10%;
+            width: 80%;
+            resize: none;
+        }
+        > * {
+            padding: 0.5rem;
+            margin: 1vh;
+        }
+    }
+    > div.external {
+        background-color: rgba(0,0,0, 0.5);
+        color: white;
+        grid-area: external;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        font-size: 0.8rem;
+        ul {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            max-width: 90%;
+            li {
+                text-align: justify;
+                text-justify: inter-word;
+                list-style: '- ';
+            }
+        }
+    }
+
+    @media (min-width: 380px) {
+        > div.title {
+            font-size: 1.5rem;
+        }
+        > div.external {
+            font-size: 0.8rem;
+        }
+    }
+
+    @media (min-width: 480px) {
+        > div.title {
+            font-size: 2rem;
+        }
+        > div.external {
+            font-size: 1rem;
+        }
+        > form.form {
+
+            input,
+            textarea {
+                width: 75%;
+                resize: none;
+            }
+            > * {
+                padding: 0.5rem;
+                margin: 1vh;
+            }
+        }
+    }
+    @media (min-width: 700px) {
+
+        > div.title {
+            font-size: 3rem;
+            span {
+                color: olive;
+            }
+            .ityped-cursor {
+                animation: blink 1.2s infinite;
+            }
+            @keyframes blink {
+                70% {
+                    opacity: 21;
+                }
+                71% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+        > div.external {
+            font-size: 1.5rem;
+        }
+        > form.form {
+
+            input,
+            textarea {
+                width: 50%;
+                resize: none;
+                font-size: 1rem;
+            }
+            > * {
+                padding: 0.5rem;
+                margin: 1vh;
+            }
+        }
+    }
+
+
+
+    @media (max-width: 480px) {
+        grid-template-columns: auto;
+        grid-template-rows: 20% 40% 40%;
+        grid-template-areas: "title"  "form" "external";
+        form.form {
+            font-size: 1rem;
+            input,
+            textarea {
+                font-size: 1rem;
+                height: 3rem;
+            }
+            input {
+                height: 1rem;
+            }
+            button {
+                padding: 0.15rem 0.25rem;
+            }
+        }
+        .external {
+
+//             background-color: transparent;
+            padding: 0 10% 0 20%;
+            height: 40%;
+        }
+//         .title {
+//             font-size: 1rem;
+//         }
+    }
+    @media (max-height:360px) {
+        > div.title {
+            font-size: 1.5rem;
+        }
+        form.form {
+
+            input,
+            textarea {
+                font-size: 0.7rem;
+
+            }
+            textarea {
+                height: 3rem;
+            }
+            button {
+                padding: 0.15rem 0.25rem;
+            }
+        }
+    }
+    @media (max-height: 300px) {
+        form.form {
+            input,
+            textarea {
+                font-size: 0.5rem;
+            }
+//             textarea {
+//                 height: 1rem;
+//             }
+        }
+    }
+}

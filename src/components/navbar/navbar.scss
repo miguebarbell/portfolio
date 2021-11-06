@@ -1,0 +1,145 @@
+@import "../../style.scss";
+
+nav {
+    div.logo {
+        height: $nav-height;
+        width: $nav-height;
+        border-radius: 50%;
+        background: url("../../assets/icons/lanasombra.jpeg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    transition: all 1.5s ease;
+    align-items: center;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 70vw;
+        li {
+            list-style: none;
+            height: $nav-height;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .email {
+                background: url("../../assets/icons/icons8-mail-50.png");
+                background-size: contain;
+            }
+            .email:hover {
+                background: url("../../assets/icons/icons8-mail-50-h.png");
+                background-size: contain;
+            }
+            .email.active {
+                background: url("../../assets/icons/icons8-mail-50-white.png");
+                background-size: contain;
+            }
+            .email.active:hover {
+                background: url("../../assets/icons/icons8-mail-50-cyan.png");
+                background-size: contain;
+            }
+            .linkedin {
+                background: url("../../assets/icons/icons8-linkedin-50.png");
+                background-size: contain;
+            }
+            .linkedin:hover {
+                background: url("../../assets/icons/icons8-linkedin-50-h.png");
+                background-size: contain;
+            }
+            .linkedin.active {
+                background: url("../../assets/icons/icons8-linkedin-50-white.png");
+                background-size: contain;
+            }
+            .linkedin.active:hover {
+                background: url("../../assets/icons/icons8-linkedin-50-cyan.png");
+                background-size: contain;
+            }
+            .github {
+                background: url("../../assets/icons/icons8-github-50.png");
+                background-size: contain;
+            }
+            .github:hover {
+                background: url("../../assets/icons/icons8-github-50-h.png");
+                background-size: contain;
+            }
+            .github.active {
+                background: url("../../assets/icons/icons8-github-50-white.png");
+                background-size: contain;
+            }
+            .github.active:hover {
+                background: url("../../assets/icons/icons8-github-50-cyan.png");
+                background-size: contain;
+            }
+            > * {
+                height: calc($nav-height * 0.9);
+                width: calc($nav-height * 0.9);
+            }
+        }
+    }
+    div > * {
+        background-color: $hamColor;
+        height: 3px;
+        width: 30px;
+    }
+    #ham {
+        border: 1px solid transparent;
+        border-radius: 5px;
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        height: calc($nav-height - 5px);
+        width: calc($nav-height - 5px);
+        align-items: center;
+    }
+    #ham:hover {
+        border: 1px solid $hamColor;
+        background-color: $menuHover;
+    }
+
+    &.active {
+        color: $menuFgColor;
+        background: $navBgColor;
+        #ham:hover {
+            border-radius: 50%;
+            > * {
+                background-color: $menuHover;
+                }
+            }
+        #ham {
+            border: 1px solid transparent;
+            align-items:center;
+            height: calc($nav-height - 0px);
+            width: calc($nav-height - 0px);
+            &:hover {
+                background-color: transparent;
+            }
+            > * {
+                background-color: $menuFgColor;
+                transform-origin: left;
+                &:first-child {
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:last-child {
+                    transform: rotate(-45deg);
+                }
+            }
+
+        }
+
+    }
+}
