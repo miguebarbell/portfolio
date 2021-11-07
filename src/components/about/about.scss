@@ -3,4 +3,8 @@
 #About {
     background-color: red;
     color: $mainColor;
+    .about-container {
+        color: white;
+        padding: 5vh 35px;
+    }
 }
