@@ -5,7 +5,7 @@ nav {
         height: $nav-height;
         width: $nav-height;
         border-radius: 50%;
-        background: url("../../assets/icons/lanasombra.jpeg");
+        background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/lanasombra.jpeg");
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -33,51 +33,51 @@ nav {
             justify-content: center;
             align-items: center;
             .email {
-                background: url("../../assets/icons/icons8-mail-50.png");
+                background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-mail-50.png");
                 background-size: contain;
             }
             .email:hover {
-                background: url("../../assets/icons/icons8-mail-50-h.png");
+                background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-mail-50-h.png");
                 background-size: contain;
             }
             .email.active {
-                background: url("../../assets/icons/icons8-mail-50-white.png");
+                background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-mail-50-white.png");
                 background-size: contain;
             }
             .email.active:hover {
-                background: url("../../assets/icons/icons8-mail-50-cyan.png");
+                background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-mail-50-cyan.png");
                 background-size: contain;
             }
             .linkedin {
-                background: url("../../assets/icons/icons8-linkedin-50.png");
+                background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-linkedin-50.png");
                 background-size: contain;
             }
             .linkedin:hover {
-                background: url("../../assets/icons/icons8-linkedin-50-h.png");
+                background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-linkedin-50-h.png");
                 background-size: contain;
             }
             .linkedin.active {
-                background: url("../../assets/icons/icons8-linkedin-50-white.png");
+                background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-linkedin-50-white.png");
                 background-size: contain;
             }
             .linkedin.active:hover {
-                background: url("../../assets/icons/icons8-linkedin-50-cyan.png");
+                background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-linkedin-50-cyan.png");
                 background-size: contain;
             }
             .github {
-                background: url("../../assets/icons/icons8-github-50.png");
+                background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-github-50.png");
                 background-size: contain;
             }
             .github:hover {
-                background: url("../../assets/icons/icons8-github-50-h.png");
+                background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-github-50-h.png");
                 background-size: contain;
             }
             .github.active {
-                background: url("../../assets/icons/icons8-github-50-white.png");
+                background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-github-50-white.png");
                 background-size: contain;
             }
             .github.active:hover {
-                background: url("../../assets/icons/icons8-github-50-cyan.png");
+                background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-github-50-cyan.png");
                 background-size: contain;
             }
             > * {
