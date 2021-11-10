@@ -8,11 +8,13 @@ const Projects = () => {
         <div id="Projects"  className='section'>
             <div className="bg-shape"/>
             <div className="bg-shape back"/>
+            <div className="wrapper">
             <div className="section-info">
-                <h1>Title of the project</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis debitis enim possimus saepe. A at commodi cumque dolores earum enim eum hic minus natus repellendus! Debitis eos maiores quis ratione!</p>
+                <h1>Network - Social Media</h1>
+                <p>This is a project that imitate the main functionality of twitter.</p>
             </div>
             <div className="section-img">
+            </div>
             </div>
         </div>
     )
