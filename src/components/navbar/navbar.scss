@@ -1,6 +1,7 @@
 @import "../../style.scss";
 
 nav {
+    z-index: 11;
     div.logo {
         height: $nav-height;
         width: $nav-height;
@@ -14,7 +15,6 @@ nav {
     width: 100vw;
     background-color: white;
     color: black;
-    z-index: 2;
     display: flex;
     justify-content: space-between;
     padding: 3px;
@@ -102,6 +102,7 @@ nav {
         height: calc(#{$nav-height} - 5px);
         width: calc(#{$nav-height} - 5px);
         align-items: center;
+//         z-index: 11;
     }
     #ham:hover {
         border: 1px solid $hamColor;
@@ -126,6 +127,7 @@ nav {
                 background-color: transparent;
             }
             > * {
+//                 z-index: 11;
                 background-color: $menuFgColor;
                 transform-origin: left;
                 &:first-child {
