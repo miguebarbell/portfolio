@@ -1,12 +1,13 @@
 @import "../../style.scss";
 
 #Projects {
+    scroll-snap-align: center !important;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(90deg, #46b7d5, #203e96);
     width: 100vw;
-    height: 100%;
+    height: calc(100vh - #{$nav-height});
     .bg-shape {
         background-image: linear-gradient(90deg, #4ff0e8, #6369fb);
         height: 100%;
@@ -67,7 +68,7 @@
         }
         .section-info {
             left: 5%;
-            position: absolute;
+//             position: absolute;
             padding: 3rem;
             color: white;
             background-color: rgba(0,0,0,.75);

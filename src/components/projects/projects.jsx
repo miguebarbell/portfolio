@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import styled from "styled-components";
 import "./projects.scss";
 
@@ -10,7 +10,6 @@ const Image = styled.div`
 const Projects = ({item}) => {
 	return (
 		<div id="Projects" className="section">
-
 			<div className="bg-shape"/>
 			<div className="bg-shape back"/>
 			<div className="wrapper">
