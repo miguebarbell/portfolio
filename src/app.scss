@@ -19,13 +19,13 @@ $nav-height: 3rem;
     //scrollbar-width: none; /* for Firefox */
     overflow-y: scroll;
     height: 100vh;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory !important;
     nav {
         height: $nav-height;
     }
     .sections > * {
         scroll-behavior: smooth;
-        scroll-snap-align: end;
+        scroll-snap-align: end !important;
         width: 100vw;
         height: calc(100vh - #{$nav-height});
         top: $nav-height;
