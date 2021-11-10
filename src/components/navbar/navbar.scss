@@ -3,6 +3,7 @@
 nav {
     z-index: 11;
     div.logo {
+        cursor: pointer;
         height: $nav-height;
         width: $nav-height;
         border-radius: 50%;
@@ -32,6 +33,7 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
             .email {
                 background: url("https://miguepro.s3.amazonaws.com/portfolio/assets/icons/icons8-mail-50.png");
                 background-size: contain;
