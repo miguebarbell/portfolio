@@ -13,6 +13,7 @@ $menuHover: cyan;
     font-family: 'Ubuntu', sans-serif;
 }
 .section-name {
+//     z-index: 9;
     height: calc(100vh - #{$nav-height});
     font-weight: 900;
     position: absolute;
@@ -21,6 +22,7 @@ $menuHover: cyan;
     justify-content: center;
     align-items: center;
     left: 1rem;
+    z-index: 1;
     > div {
 //         left: 5vw;
         position: absolute;

@@ -1,71 +1,88 @@
 @import "../../style.scss";
 
 #Projects {
-    //     height: 100%;
-    //    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, #46b7d5, #203e96);
     .bg-shape {
-        background-color: darkorange;
+        background-image: linear-gradient(90deg, #4ff0e8, #6369fb);
         height: 100%;
         width: 100%;
         position: absolute;
-        clip-path: polygon(0 0, 100% 0, 100% 20%, 0 80%);
-//         transform: rotate(65deg);
-//         border-radius: 45%;
-//         top: 20%;
+        clip-path: polygon(0 30%, 100% 0, 100% 15%, 0 80%);
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
 
     .back {
-//         transform: rotate(170deg);
         height: 100%;
         width: 100%;
-        background-color: green;
-        clip-path: polygon(0 85%, 100% 22%, 100% 100%, 0 100%);
-//         left: 5%;
-//         top: 30%;
+        background-image: linear-gradient(90deg, #97d5a4, #3389bc);
+        clip-path: polygon(0 85%, 100% 15%, 100% 85%, 0 170%);
     }
     .wrapper {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        width: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: white;
+        z-index: 1;
+        @media (max-width: 1100px) {
+            width: 90%;
+        }
+        @media (max-width: 810px) {
+            height: 70%;
+            flex-direction: column;
+            .section-info {
+                top: 10%;
+                width: 90vw;
+            }
+        }
         &:hover {
             .section-img {
                 display: flex;
+                transition: all 0.5s ease-out;
+                -webkit-transition: all 0.5s ease-out;
+                transform: rotate(0deg);
+                transform: scale(1.2);
+
                 &::after {
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: flex-end;
                     font-size: 3rem;
                     font-weight: bold;
                     height: 100%;
                     width: 100%;
                     color: white;
-                    background-color: rgba(0,0,0,.5);
+                    background-image: linear-gradient(0deg, rgba(0,0,0,.5), transparent);
                     content: "Learn More";
+                    transition: 0.3s;
                 }
             }
         }
         .section-info {
-            top: 50%;
-            transform: translateY(-50%);
+            left: 5%;
+            position: absolute;
             padding: 3rem;
             color: white;
             background-color: rgba(0,0,0,.75);
             clip-path: polygon(10% 0,130% 0%, 90% 90%,0 90%, 10% 10%);
             z-index: 2;
             width: 60%;
-            //height: 100%;
+            max-width: 600px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: absolute;
-            @media (max-width: 1000px) {
-                width: 100%;
-                justify-content: flex-start;
+            @media (min-width: 1500px) {
+                left: 20%;
             }
-
             * {
                 margin: 20px;
             }
-
             h1 {
                 font-size: 3rem;
                 @media (max-width: 1000px) {
@@ -89,37 +106,20 @@
             background-size: cover;
             height: 50vh;
             width: 50vh;
-            position: absolute;
             border-radius: 5px;
-            transform: rotate(5deg);
             right: 10%;
             top: 30%;
             z-index: 1;
             box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-            opacity: 0.85;
-
+//             opacity: 0.85;
+            transform: rotate(5deg);
             @media (max-width: 450px) {
                 bottom: 0;
                 left: 0;
                 height: 90vw;
                 width: 90vw;
             }
-
             &:hover {
-                //border: 1px solid blue;
-                //display: flex;
-                //&::after {
-                //    display: flex;
-                //    align-items: center;
-                //    justify-content: center;
-                //    font-size: 3rem;
-                //    font-weight: bold;
-                //    height: 100%;
-                //    width: 100%;
-                //    color: white;
-                //    background-color: rgba(0,0,0,.5);
-                //    content: "Learn More";
-                //}
             }
         }
     }

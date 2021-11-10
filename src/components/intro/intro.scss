@@ -11,7 +11,8 @@ $descFontSize: 3rem;
     background-size: cover;
 
     .right {
-        margin-left: 10vw;
+//         margin-left: 10vw;
+//         width: 60vw;
         position: absolute;
         height: 100%;
         display: flex;
@@ -20,6 +21,7 @@ $descFontSize: 3rem;
         flex: 0.5;
         right: 0;
         h1 {
+            margin-left: 10vw;
             font-size: calc(#{$descFontSize});
             @media (min-width: 1000px) {
                 font-size: calc(1.5 * #{$descFontSize});
