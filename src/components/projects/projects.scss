@@ -82,8 +82,9 @@
 //             position: absolute;
 //             padding: 3rem;
             color: white;
+            border-radius: 5px;
             background-color: rgba(0,0,0,.75);
-            clip-path: polygon(10% 0,130% 0%, 90% 90%,0 90%, 10% 10%);
+            clip-path: polygon(10% 0,100% 0%, 100% 90%,0 90%, 10% 10%, 40% 10%, 20% 20%);
             z-index: 2;
             width: 50%;
             max-height: 200px;
@@ -91,7 +92,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: right;
+
             @media (min-width: 1500px) {
                 left: 20%;
             }
@@ -103,9 +105,10 @@
                 margin: 20px;
             }
             h1 {
-                font-size: 3rem;
+                font-size: 2rem;
                 padding: 0;
-                margin: 0;
+                padding-right: 5px;
+                text-align: right;
                 @media (max-width: 1000px) {
                     font-size: 2rem;
                 }
@@ -114,6 +117,7 @@
             p {
                 font-weight: 400;
                 font-size: 1rem;
+                text-align: justify;
                 text-justify: inter-word;
                 @media (max-width: 1000px) {
                     font-size: 1rem;
@@ -125,6 +129,7 @@
         }
 
         .section-img {
+            border-radius: 8px;
             cursor: pointer;
             background-size: cover;
             height: 50vh;
