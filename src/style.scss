@@ -6,6 +6,11 @@ $navBgColor: linear-gradient(90deg, #FFFFFF, #6DD5FA, #2980B9);
 $menuBgColor: linear-gradient(90deg, #6DD5FA, #2980B9);
 $menuHover: cyan;
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,600;1,400&family=Oswald&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,600;1,400&family=Nunito&family=Oswald&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -20,7 +25,7 @@ $menuHover: cyan;
     justify-content: center;
     align-items: center;
 //     margin-left: 1rem;
-    left: 1rem;
+    left: 2rem;
     z-index: 1;
     > div {
         position: absolute;

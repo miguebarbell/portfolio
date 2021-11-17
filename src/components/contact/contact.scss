@@ -3,8 +3,8 @@
 #Contact {
     display: grid;
     grid-template-columns: 65% 35%;
-    grid-template-rows: 25% 75%;
-    grid-template-areas: "title title" "form external";
+    grid-template-rows: 25% 60% 15%;
+    grid-template-areas: "title title" "form external" "footer footer";
     background: url("https://4d0q7u11k31p1qnkosal8q2e-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/military-planning-720x460.jpg");
     background-size: cover;
     > div.title {
@@ -47,6 +47,9 @@
         align-items: center;
         height: 100%;
         font-size: 0.8rem;
+        h1 {
+            font-family: 'Bebas Neue', cursive;
+        }
         ul {
             height: 100%;
             display: flex;
@@ -54,13 +57,35 @@
             justify-content: space-around;
             max-width: 90%;
             li {
+                font-family: 'Oswald', sans-serif;
+                font-size: 2rem;
                 text-align: justify;
                 text-justify: inter-word;
                 list-style: '- ';
             }
         }
     }
+    div.footer {
 
+    padding: 1rem 3rem;
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+        div {
+//             font-family: 'Nunito', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+//             font-weight: 400;
+//             background-color: red;
+        ul li{
+        list-style: none;
+        }
+        }
+    }
     @media (min-width: 380px) {
         > div.title {
             font-size: 1.5rem;

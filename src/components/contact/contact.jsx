@@ -28,11 +28,24 @@ const Contact = () => {
                 <button type="submit">Send</button>
             </form>
             <div className="external">
+                <h1>Get in touch!</h1>
                 <ul>
+                    <li>We can integrate different technologies, depending on your project.</li>
                     <li>You can see the source code in my github repositories.</li>
                     <li>Connect and chat with my by LinkedIn.</li>
                     <li>Send a custom message by email.</li>
                 </ul>
+            </div>
+            <div className="footer">
+                <div>
+                    <h2>2021 Miguel R. All Right Reserved.</h2>
+                    <h3>New Hampshire, USA</h3>
+                    <h3>contact@migue.pro</h3>
+                </div>
+                <div>
+                    <h3>Github</h3>
+                    <h3>LinkedIn</h3>
+                </div>
             </div>
         </div>
     )
