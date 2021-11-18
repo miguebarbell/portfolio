@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/miguebarbell.github.io/portfolio/static/css/main.a4dcc9cc.chunk.css",
-    "main.js": "/miguebarbell.github.io/portfolio/static/js/main.ef85840b.chunk.js",
-    "main.js.map": "/miguebarbell.github.io/portfolio/static/js/main.ef85840b.chunk.js.map",
-    "runtime-main.js": "/miguebarbell.github.io/portfolio/static/js/runtime-main.c3226bd6.js",
-    "runtime-main.js.map": "/miguebarbell.github.io/portfolio/static/js/runtime-main.c3226bd6.js.map",
-    "static/js/2.edd36d2b.chunk.js": "/miguebarbell.github.io/portfolio/static/js/2.edd36d2b.chunk.js",
-    "static/js/2.edd36d2b.chunk.js.map": "/miguebarbell.github.io/portfolio/static/js/2.edd36d2b.chunk.js.map",
-    "index.html": "/miguebarbell.github.io/portfolio/index.html",
-    "precache-manifest.77b72413529d24c3821edb81c6e1121b.js": "/miguebarbell.github.io/portfolio/precache-manifest.77b72413529d24c3821edb81c6e1121b.js",
-    "service-worker.js": "/miguebarbell.github.io/portfolio/service-worker.js",
-    "static/css/main.a4dcc9cc.chunk.css.map": "/miguebarbell.github.io/portfolio/static/css/main.a4dcc9cc.chunk.css.map",
-    "static/js/2.edd36d2b.chunk.js.LICENSE.txt": "/miguebarbell.github.io/portfolio/static/js/2.edd36d2b.chunk.js.LICENSE.txt"
+    "main.css": "/portfolio/static/css/main.a4dcc9cc.chunk.css",
+    "main.js": "/portfolio/static/js/main.ef85840b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ef85840b.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.67842f74.chunk.js": "/portfolio/static/js/2.67842f74.chunk.js",
+    "static/js/2.67842f74.chunk.js.map": "/portfolio/static/js/2.67842f74.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.fd33051427ae152c65bd172cfdc7edb6.js": "/portfolio/precache-manifest.fd33051427ae152c65bd172cfdc7edb6.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.a4dcc9cc.chunk.css.map": "/portfolio/static/css/main.a4dcc9cc.chunk.css.map",
+    "static/js/2.67842f74.chunk.js.LICENSE.txt": "/portfolio/static/js/2.67842f74.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c3226bd6.js",
-    "static/js/2.edd36d2b.chunk.js",
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.67842f74.chunk.js",
     "static/css/main.a4dcc9cc.chunk.css",
     "static/js/main.ef85840b.chunk.js"
   ]
